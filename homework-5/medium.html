@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Medium Challenge</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFD3D3;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .child {
+            position: relative;
+        }
+
+        .heart {
+            width: 250px;
+            height: 250px;
+            display: block;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            15% {
+                height: 250px;
+                width: 250px;
+            }
+
+            55% {
+                width: 350px;
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <img class="heart" src="http://pngimg.com/uploads/heart/heart_PNG51335.png" alt="Heart">
+
+</body>
+
+</html>
