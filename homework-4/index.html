@@ -1,9 +1,127 @@
 <html>
-    <head>
-<title>Flexbox Homework</title>
 
-    </head>
-    <body>
-        
-    </body>
+<head>
+    <title>Flexbox Homework</title>
+    <style>
+        body {
+            background-color: #E4CABB;
+            margin: 0;
+        }
+
+        .redcard {
+            width: 300px;
+            height: 170px;
+            background-color: #FF6B57;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            position: relative;
+
+        }
+
+        .redcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            align-self: flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
+            order: 4;
+
+
+        }
+
+        .greencontainer {
+            display: flex;
+            align-self: flex-start;
+            flex-direction: column;
+            order: 1;
+
+        }
+
+        .greencard {
+            width: 300px;
+            height: 170px;
+            background-color: #17593E;
+
+        }
+
+
+        .bluecard {
+            width: 350px;
+            height: 60px;
+            background-color: #004C63;
+        }
+
+        .bluecontainer {
+            display: flex;
+            justify-content: flex-start;
+            position: absolute;
+            order: 3;
+        }
+
+        .yellowcard {
+            width: 1745px;
+            height: 60px;
+            background-color: #EBAA4C;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+
+
+        }
+
+        .yellowcontainer {
+            display: flex;
+            flex-direction: row;
+            align-content: flex-end;
+            justify-content: flex-end;
+            align-items: flex-end;
+            order: 2;
+            flex-wrap: nowrap;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="redcontainer">
+            <div class="redcard sidecard"></div>
+            <div class="redcard sidecard"></div>
+            <div class="redcard sidecard"></div>
+            <div class="redcard sidecard"></div>
+            <div class="redcard sidecard"></div>
+        </div>
+
+        <div class="greencontainer">
+            <div class="greencard"></div>
+            <div class="greencard"></div>
+            <div class="greencard"></div>
+            <div class="greencard"></div>
+            <div class="greencard"></div>
+        </div>
+        <div class="bluecontainer">
+            <div class="bluecard"></div>
+            <div class="bluecard"></div>
+            <div class="bluecard"></div>
+            <div class="bluecard"></div>
+            <div class="bluecard"></div>
+        </div>
+        <div class="yellowcontainer">
+            <div class="yellowcard"></div>
+            <div class="yellowcard"></div>
+            <div class="yellowcard"></div>
+            <div class="yellowcard"></div>
+            <div class="yellowcard"></div>
+        </div>
+    </div>
+</body>
+
 </html>
