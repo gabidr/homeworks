@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Loop Medium </title>
+</head>
+
+<body>
+    <script>
+        var b = Math.floor(Math.random() * 100);
+        console.log(b);
+        var a = Math.floor(Math.random() * 100);
+
+        var c = []
+
+        if (a > b) {
+            for (a; a > b; a--) {
+                c.push(a);
+            }
+        } else if (a < b) {
+            for (a; a < b; a++) {
+                c.push(a)
+            }
+        }
+        console.log(c);
+        for (var i = 0, sum = 0; i < c.length; sum += c[i++]);
+        console.log("The sum of al numbers from above is: " + Number(sum + b));
+        alert("The sum of " + "all the numbers " + "that are between " + "2 numbers (a and b) " + "is: " + Number(sum + b));
+    </script>
+</body>
+
+</html>
