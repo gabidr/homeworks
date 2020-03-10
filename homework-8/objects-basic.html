@@ -6,13 +6,12 @@
         var animal = {
             type: "lion",
             name: "Beny",
-            gut: "zebra meat",
-            eat: function () {
-                var food = ["buffalo meat", "anitwlope meat",]
+            food: ["zebra meat", "antilope meat",],
+            gut: function eat() {
+                return this.food
             }
-        }
-
-
+        };
+        console.log(animal);
     </script>
 </head>
 
