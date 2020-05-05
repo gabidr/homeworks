@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>Analog Clock</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .clock {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 10%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .min {
+            position: absolute;
+            z-index: 3;
+            right: 614px;
+            top: 7.3%;
+            width: 30%;
+            text-align: center;
+            font-size: 18px;
+            animation: minRotation 3600s infinite linear;
+        }
+
+        @keyframes minRotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .hour {
+            position: absolute;
+            z-index: 2;
+            right: 614px;
+            top: 7.3%;
+            width: 30%;
+            text-align: center;
+            font-size: 18px;
+            animation: hourRotation 43200s infinite linear;
+        }
+
+        @keyframes hourRotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .sec {
+            position: absolute;
+            z-index: 4;
+            right: 614px;
+            top: 7.3%;
+            width: 30%;
+            text-align: center;
+            font-size: 18px;
+            animation: secRotation 60s infinite linear;
+        }
+
+        @keyframes secRotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock"> <img src="clock.png"> </div>
+        <img src="seconds-hand.png" class="sec">
+        <img src="min-hand.png" class="min">
+        <img src="hour-hand.png" class="hour">
+    </div>
+</body>
+
+</html>

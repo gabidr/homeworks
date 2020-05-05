@@ -7,9 +7,11 @@
             type: "lion",
             name: "Beny",
             food: ["zebra meat", "antilope meat",],
-            gut: function eat() {
-                return this.food
-            }
+            eat: function (food) {
+                return this.food(1, 2);
+            },
+
+            gut: this.eat()
         };
         console.log(animal);
     </script>
